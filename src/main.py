@@ -7,7 +7,7 @@ from common import *
 from dfs import *
 from events import *
 
-all_pairs = json.load(open('files/pairs.json'))
+all_pairs = json.load(open('files/bsc/bsc_pairs.json'))
 
 pairs, pairsDict = selectPairs(all_pairs)
 tokenIn = startToken
@@ -79,7 +79,7 @@ def doTrade(balance, trade):
     amountIn = int(trade['optimalAmount'])
     useFlash = False
     if amountIn > balance:
-        useFlash = True
+        return None
     minOut = int(amountIn)
     to = config['address']
     deadline = int(time.time()) + 600
@@ -139,7 +139,7 @@ def main():
     print('pairs:', len(pairs))
     try:
         # pairs = get_reserves(pairs)
-        pairs = get_reserves_batch_mt(pairs)
+        pairs = get_reserves(pairs)
         if needChangeKey:
             needChangeKey = False
             l = len(config['https'])
@@ -167,7 +167,10 @@ def main():
     print('balance:', balance)
     trade = trades[0]
     if trade and int(trade['profit'])/pow(10, startToken['decimal']) >= minProfit:
-        print(trade)
+        print(int(trade['profit'])/pow(10, startToken['decimal']))
+        for route in trade['route']:
+          print(route['token0']['symbol'], '->', route['token1']['symbol'], '->')  
+        quit(0)
         tx = doTrade(balance, trade)
         print('tx:', tx)
 

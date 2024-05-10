@@ -1,0 +1,96 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "sender",
+						"type": "address"
+					},
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "owner",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "number",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct Account.Info",
+						"name": "accountInfo",
+						"type": "tuple"
+					},
+					{
+						"internalType": "bytes",
+						"name": "data",
+						"type": "bytes"
+					}
+				],
+				"name": "callFunction",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"author": "dYdX * Interface that Callees for Solo must implement in order to ingest data.",
+			"methods": {
+				"callFunction(address,(address,uint256),bytes)": {
+					"params": {
+						"accountInfo": "The account from which the data is being sent",
+						"data": "Arbitrary data given by the sender",
+						"sender": "The msg.sender to Solo"
+					}
+				}
+			},
+			"title": "ICallee"
+		},
+		"userdoc": {
+			"methods": {
+				"callFunction(address,(address,uint256),bytes)": {
+					"notice": "Allows users to send this contract arbitrary data."
+				}
+			}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/dydx/ICallee.sol": "ICallee"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/dydx/ICallee.sol": {
+			"keccak256": "0x981d182383e48badb7ccd39b28155819ddb27c801dc1b7cca8073f42c8f1e949",
+			"urls": [
+				"bzz-raw://21e838ac2ac0ac5aaba470235586b3b6cba251c14203b5b70cede9c2fab589d3",
+				"dweb:/ipfs/QmNUqF5VDPgzR2mcGLxXvEkZWbtMEAJNcsaAWJxcykYHUh"
+			]
+		},
+		"contracts/dydx/ISoloMargin.sol": {
+			"keccak256": "0xfcc0cd7be9dded596cd0d13873bd360743d823ec5e2a204992bd866385b8a6bf",
+			"urls": [
+				"bzz-raw://99143ae877103b450bbf443546f420998f334f2f6be9c3705ec3adaff815b181",
+				"dweb:/ipfs/QmdY3w54TM8cEQ4My4S7U2AHd5wuMNNePoCNtFgZi2Xb2J"
+			]
+		}
+	},
+	"version": 1
+}

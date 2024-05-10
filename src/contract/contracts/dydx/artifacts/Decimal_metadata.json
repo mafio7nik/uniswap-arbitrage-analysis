@@ -1,0 +1,37 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/dydx/ISoloMargin.sol": "Decimal"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/dydx/ISoloMargin.sol": {
+			"keccak256": "0xfcc0cd7be9dded596cd0d13873bd360743d823ec5e2a204992bd866385b8a6bf",
+			"urls": [
+				"bzz-raw://99143ae877103b450bbf443546f420998f334f2f6be9c3705ec3adaff815b181",
+				"dweb:/ipfs/QmdY3w54TM8cEQ4My4S7U2AHd5wuMNNePoCNtFgZi2Xb2J"
+			]
+		}
+	},
+	"version": 1
+}

@@ -27,7 +27,7 @@ ws = Web3(WebsocketProvider(wss_addr))
 pairABI = json.load(open('abi/IUniswapV2Pair.json'))['abi']
 erc20abi = json.load(open('./abi/erc20.abi'))
 printer = w3.eth.contract(address=printer_addr, abi=printer_abi)
-printer_sushi = w3.eth.contract(address=printer_sushi_addr, abi=printer_abi)
+#printer_sushi = w3.eth.contract(address=printer_sushi_addr, abi=printer_abi)
 
 usdc = config['usdc'][network]
 ycrv = config['ycrv'][network]
@@ -326,7 +326,7 @@ def getPairs(symbol='USDC', thresh = 500):
             if pair['reserve0'] / pow(10, pair['token0']['decimal']) >= thresh:
                 ret.append(pair)
         if pair['token1']['symbol'] == symbol:
-            if pair['reserve1'] / pow(10, pair['token1'][decimal]) >= thresh:
+            if pair['reserve1'] / pow(10, pair['token1']['decimal']) >= thresh:
                 ret.append(pair)
     print('count:', len(ret))
     json.dump(ret, open('files/'+symbol+'_pairs.json', 'w'))

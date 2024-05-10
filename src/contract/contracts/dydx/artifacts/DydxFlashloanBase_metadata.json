@@ -1,0 +1,58 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/dydx/DydxFlashloanBase.sol": "DydxFlashloanBase"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/dydx/DydxFlashloanBase.sol": {
+			"keccak256": "0x6fa1ea1b395b0dc2400d7d29cb18cf2de0542df57029fc9bbce7264e2ae3add4",
+			"urls": [
+				"bzz-raw://4e01419057a9deebc66b69668b303ae9030d55f2df90c6e8fec44f32d9d544e2",
+				"dweb:/ipfs/QmZoLgsXNZqAp3nALvj1DozStPsAirKVCEwGAXh9fHSSFw"
+			]
+		},
+		"contracts/dydx/IERC20.sol": {
+			"keccak256": "0x10a5742cbb3c3a5133df640307c76a535338672000d5e0d57859451dd18b9f80",
+			"urls": [
+				"bzz-raw://34e00741540ded954e5bbd67415f95b39c1daff29586bebdf87b73a746814940",
+				"dweb:/ipfs/QmUpKQMeLGM5Fy7zP7gcyD5YAQxbr59SED53D5KpvGhZvY"
+			]
+		},
+		"contracts/dydx/ISoloMargin.sol": {
+			"keccak256": "0xfcc0cd7be9dded596cd0d13873bd360743d823ec5e2a204992bd866385b8a6bf",
+			"urls": [
+				"bzz-raw://99143ae877103b450bbf443546f420998f334f2f6be9c3705ec3adaff815b181",
+				"dweb:/ipfs/QmdY3w54TM8cEQ4My4S7U2AHd5wuMNNePoCNtFgZi2Xb2J"
+			]
+		},
+		"contracts/dydx/SafeMath.sol": {
+			"keccak256": "0x4f1de81ef4ee53cb06f78b10c92c5b9125a9430397ab67acae769a18c260c927",
+			"urls": [
+				"bzz-raw://d370478ae31b34782036041ae02963eb7159da24d6693640ab34a32eaad3e3e6",
+				"dweb:/ipfs/Qmexs1jYXF69qGhrgYDdEaCzY1o3QRm7KYxENe91WvqRbM"
+			]
+		}
+	},
+	"version": 1
+}

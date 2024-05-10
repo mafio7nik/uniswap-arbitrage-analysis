@@ -1,39 +1,27 @@
 {
-	"start": "weth",
+	"start": "usdc",
 	"maxHops": 6,
 	"minProfit": 0.01,
 	"pairs": "random",
 	"pair_num": 1000,
 
-	"network": "mainnet",
+	"key": "https://data-platform.nodereal.io/graph/v1/148da1680040452aa4cf979257e760f8/projects/pancakeswap",
+	"network": "bsc",
 	"https": [
-		"https://mainnet.infura.io/v3/xxxx",
-		"https://mainnet.infura.io/v3/xxxx",
-		"https://mainnet.infura.io/v3/xxxx",
-		"https://mainnet.infura.io/v3/xxxx",
-		"https://mainnet.infura.io/v3/xxxx",
-		"https://mainnet.infura.io/v3/xxxx",
-		"https://mainnet.infura.io/v3/xxxx",
-		"https://mainnet.infura.io/v3/xxxx",
-		"https://mainnet.infura.io/v3/xxxx",
-		"https://mainnet.infura.io/v3/xxxx",
-		"https://mainnet.infura.io/v3/xxxx",
-		"https://mainnet.infura.io/v3/xxxx",
-		"https://mainnet.infura.io/v3/xxxx",
-		"https://mainnet.infura.io/v3/xxxx",
-		"https://mainnet.infura.io/v3/xxxx",
-		"https://mainnet.infura.io/v3/xxxx",
-		"https://mainnet.infura.io/v3/xxxx",
-		"https://mainnet.infura.io/v3/xxxx",
-		"https://mainnet.infura.io/v3/xxxx"
+		"https://eth.llamarpc.com"
+
 	],
 	"local": {
 		"http": "http://127.0.0.1:8545",
 		"wss": "ws://127.0.0.1:8546"
 	},
+	"bsc": {
+		"http": "https://bsc-rpc.publicnode.com",
+		"wss": "wss://dex.binance.org/api"
+	},
 	"mainnet": {
-		"http": "https://mainnet.infura.io/v3/xxxxx",
-		"wss": "wss://mainnet.infura.io/ws/v3/xxxxx"
+		"http": "https://go.getblock.io/5034326daad347f387c451990b6a4cde",
+		"wss": "wss://mainnet.infura.io/ws/v3/4d899dc7d0d447719d61149b889095d6"
 	},
 	"ropsten": {
 		"http": "https://ropsten.infura.io/v3/xxxxx",
@@ -46,44 +34,50 @@
 	"gasnow_tx": "https://api.taichi.network:10001/rpc/public",
 	"gasnow": "https://gasnow.sparkpool.com/api/v3/gas/price",
 
-	"address": "xxxxxx",
-	"privkey": "xxxxxx",
+	"address": "0xdd175d64e69E2037D512c875e84D25Ba4baCFF60",
+	"privkey": "0xc8dde2fa7c58f509a3cf97a2777689244560d61aae173936002886b8b0ebde31",
 
-	"printer_sushi": "xxxxx",
+	"printer_sushi": "xxx",
 	"printer": {
-		"mainnet": "xxxxx",
+		"mainnet": "0xd3aDdA2E1869D6bF1784E28fcf4Dd6802b5D84e1",
 		"local": "xxxxx",
 		"ropsten": "xxxxx",
-		"kovan": "xxxxx"
+		"kovan": "xxxxx",
+		"bsc": "0xd3aDdA2E1869D6bF1784E28fcf4Dd6802b5D84e1"
 	},
 	"weth": {
 		"mainnet": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
 		"local": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
 		"ropsten": "0xc778417E063141139Fce010982780140Aa0cD5Ab",
-		"kovan": "0xd0A1E359811322d97991E03f863a0C30C2cF029C"
+		"kovan": "0xd0A1E359811322d97991E03f863a0C30C2cF029C",
+		"bsc": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c"
 	},
 	"usdt": {
 		"mainnet": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
 		"local": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
 		"ropsten": "",
-		"kovan": ""
+		"kovan": "",
+		"bsc": "0x55d398326f99059ff775485246999027b3197955"
 	},
 	"usdc": {
 		"mainnet": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
 		"local": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
 		"ropsten": "",
-		"kovan": "0xe22da380ee6B445bb8273C81944ADEB6E8450422"
+		"kovan": "0xe22da380ee6B445bb8273C81944ADEB6E8450422",
+		"bsc" : "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d"
 	},
 	"dai": {
 		"mainnet": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
 		"local": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
 		"ropsten": "0xaD6D458402F60fD3Bd25163575031ACDce07538D",
-		"kovan": "0xFf795577d9AC8bD7D90Ee22b6C1703490b6512FD"
+		"kovan": "0xFf795577d9AC8bD7D90Ee22b6C1703490b6512FD",
+		"bsc" : "0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3"
 	},
 	"ycrv": {
 		"mainnet": "0xdF5e0e81Dff6FAF3A7e52BA697820c5e32D806A8",
 		"local": "0xdF5e0e81Dff6FAF3A7e52BA697820c5e32D806A8",
 		"ropsten": "",
-		"kovan": ""
+		"kovan": "",
+		"bsc" : ""
 	}
 }

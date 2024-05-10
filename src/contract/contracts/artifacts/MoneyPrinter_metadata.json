@@ -1,0 +1,127 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "fallback"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "tokenIn",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amountIn",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amountOutMin",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address[]",
+						"name": "path",
+						"type": "address[]"
+					},
+					{
+						"internalType": "uint256",
+						"name": "deadline",
+						"type": "uint256"
+					}
+				],
+				"name": "printMoney",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_o",
+						"type": "address"
+					}
+				],
+				"name": "setOwner",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/MoneyPrinter.sol": "MoneyPrinter"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/IUniswapV2Router01.sol": {
+			"keccak256": "0x1ad22d91f028ac4acbd4b5d8db24bc88b8fc06827091cfff0e2460c1130f34e4",
+			"urls": [
+				"bzz-raw://8293221a8c2fc8ae33e6733567297a4ffe2b42c4dc5f3fcccd17ab1d17d405bb",
+				"dweb:/ipfs/QmVcsbs67h6hXtCSr9T8WE7srUQgVa5tmJv4QhSfneYxvk"
+			]
+		},
+		"contracts/IUniswapV2Router02.sol": {
+			"keccak256": "0x90416b6a6421c0862f4a53be01f0be28653f882965d9e83bf74e69e745411c6f",
+			"urls": [
+				"bzz-raw://3319ff2ca1d6d029e3ae85a74439ae1b955965c9265284ff92034c3383c4b036",
+				"dweb:/ipfs/QmXdmvDqacwnNvNL2cmVEU7T6NNpqPoEEuF13rWSgUvN36"
+			]
+		},
+		"contracts/IWeth.sol": {
+			"keccak256": "0x26b7e82db5bbacd67cbf04c029fe8de17a6cec7b28acfc919d26ddb3b58e17fa",
+			"urls": [
+				"bzz-raw://a93ba9582649d37196ee3fb6ee045b915e76fb12d9832b6dab672c2e12c7b495",
+				"dweb:/ipfs/QmayGV9wP5evpCe1LNA3gcQFtgfznBs1yE1hzGk2MPYQ64"
+			]
+		},
+		"contracts/MoneyPrinter.sol": {
+			"keccak256": "0x43b2915ccc0fa559683456b5a0e2045d3cb05a0b48ae9467ce06fb81239dd98f",
+			"urls": [
+				"bzz-raw://8dc69b7d30ec14d221b30625af9f1c21d17d6bed72980e78a21cea62228ee13c",
+				"dweb:/ipfs/QmWUkmLoPdvAYNSCVQW99M9vriBYMPEJHuGcPstZRJzVkV"
+			]
+		},
+		"contracts/dydx/IERC20.sol": {
+			"keccak256": "0x10a5742cbb3c3a5133df640307c76a535338672000d5e0d57859451dd18b9f80",
+			"urls": [
+				"bzz-raw://34e00741540ded954e5bbd67415f95b39c1daff29586bebdf87b73a746814940",
+				"dweb:/ipfs/QmUpKQMeLGM5Fy7zP7gcyD5YAQxbr59SED53D5KpvGhZvY"
+			]
+		}
+	},
+	"version": 1
+}

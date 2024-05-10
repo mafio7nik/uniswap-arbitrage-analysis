@@ -1,0 +1,63 @@
+{
+	"deploy": {
+		"VM:-": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"main:1": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"ropsten:3": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"rinkeby:4": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"kovan:42": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"goerli:5": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"Custom": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		}
+	},
+	"data": {
+		"bytecode": {
+			"linkReferences": {},
+			"object": "6080604052348015600f57600080fd5b50604c80601d6000396000f3fe6080604052600080fdfea365627a7a723158206dff2af5d409cdd86dfef35e8d1601f11992b5d69149df0c77739ac60bb30b936c6578706572696d656e74616cf564736f6c63430005110040",
+			"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x4C DUP1 PUSH1 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG3 PUSH6 0x627A7A723158 KECCAK256 PUSH14 0xFF2AF5D409CDD86DFEF35E8D1601 CALL NOT SWAP3 0xB5 0xD6 SWAP2 0x49 0xDF 0xC PUSH24 0x739AC60BB30B936C6578706572696D656E74616CF564736F PUSH13 0x63430005110040000000000000 ",
+			"sourceMap": "138:3182:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;138:3182:0;;;;;;;"
+		},
+		"deployedBytecode": {
+			"linkReferences": {},
+			"object": "6080604052600080fdfea365627a7a723158206dff2af5d409cdd86dfef35e8d1601f11992b5d69149df0c77739ac60bb30b936c6578706572696d656e74616cf564736f6c63430005110040",
+			"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG3 PUSH6 0x627A7A723158 KECCAK256 PUSH14 0xFF2AF5D409CDD86DFEF35E8D1601 CALL NOT SWAP3 0xB5 0xD6 SWAP2 0x49 0xDF 0xC PUSH24 0x739AC60BB30B936C6578706572696D656E74616CF564736F PUSH13 0x63430005110040000000000000 ",
+			"sourceMap": "138:3182:0:-;;;;;"
+		},
+		"gasEstimates": {
+			"creation": {
+				"codeDepositCost": "15200",
+				"executionCost": "69",
+				"totalCost": "15269"
+			},
+			"internal": {
+				"_getAccountInfo()": "infinite",
+				"_getCallAction(bytes memory)": "infinite",
+				"_getDepositAction(uint256,uint256)": "infinite",
+				"_getMarketIdFromTokenAddress(address,address)": "infinite",
+				"_getRepaymentAmountInternal(uint256)": "infinite",
+				"_getWithdrawAction(uint256,uint256)": "infinite"
+			}
+		},
+		"methodIdentifiers": {}
+	},
+	"abi": []
+}

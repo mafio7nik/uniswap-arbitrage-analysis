@@ -1,25 +1,24 @@
 pragma solidity ^0.5.0;
 pragma experimental ABIEncoderV2;
 
-import "@studydefi/money-legos/dydx/contracts/DydxFlashloanBase.sol";
-import "@studydefi/money-legos/dydx/contracts/ICallee.sol";
+import './dydx/ISoloMargin.sol';
+import './IERC20.sol';
 
-import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+//import './IERC20.sol';
 import './IUniswapV2Router02.sol';
 import './IWeth.sol';
 
-contract MoneyPrinter is ICallee, DydxFlashloanBase {
-	address uni_addr = 0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D;
+contract MoneyPrinter {
+	address uni_addr = 0x10ED43C718714eb63d5aA57B78B54704E256024E;
 	//address solo_addr = 0x4EC3570cADaAEE08Ae384779B0f3A45EF85289DE; // kovan
 	//address weth_addr = 0xd0A1E359811322d97991E03f863a0C30C2cF029C; // kovan
 	//address dai_addr = 0xFf795577d9AC8bD7D90Ee22b6C1703490b6512FD; // kovan
-	address solo_addr = 0x1E0447b19BB6EcFdAe1e4AE1694b0C3659614e4e;
-	address weth_addr = 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2;
-	address dai_addr = 0x6B175474E89094C44Da98b954EedeAC495271d0F;
-	address usdc_addr = 0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48;
+	//address solo_addr = 0x1E0447b19BB6EcFdAe1e4AE1694b0C3659614e4e; // not used
+	address weth_addr = 0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c;
+	address dai_addr = 0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3;
+	address usdc_addr = 0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d;
 
     IUniswapV2Router02 uni = IUniswapV2Router02(uni_addr);
-	ISoloMargin solo = ISoloMargin(solo_addr);
 
     address owner;
 
